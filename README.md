@@ -41,16 +41,16 @@ presentViewController(ql, animated: true, completion: nil)
 - Add two data source non-optional methods
 
 func numberOfPreviewItemsInPreviewController(controller: QLPreviewController!) -> Int{
-return 1
+  return 1
 }
 
 func previewController(controller: QLPreviewController!, previewItemAtIndex index: Int) -> QLPreviewItem! {
-println(“Getting item”)
-var mainbundle = NSBundle.mainBundle()
-var url = mainbundle.pathForResource(“<YOUR DOC FILENAME>”, ofType: “pdf”)!
-println(url)
-var doc = NSURL(fileURLWithPath: url)
-return doc
+  println(“Getting item”)
+  var mainbundle = NSBundle.mainBundle()
+  var url = mainbundle.pathForResource(“<YOUR DOC FILENAME>”, ofType: “pdf”)!
+  println(url)
+  var doc = NSURL(fileURLWithPath: url)
+  return doc
 }
 
 Here you will have to substitute your document name in pathForResource function and also add a correct type for the file. In our example case it’s pdf.
