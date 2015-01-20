@@ -31,8 +31,8 @@ class ViewController: UIViewController, QLPreviewControllerDataSource {
 
 - Initiate the QLPreviewController in viewDidLoad function and add dataSource to it.
 
-var ql = QLPreviewController()
-ql.dataSource = self
+	var ql = QLPreviewController()
+	ql.dataSource = self
 
 Also present the view controller 
 
@@ -40,9 +40,9 @@ presentViewController(ql, animated: true, completion: nil)
 
 - Add two data source non-optional methods
 
-func numberOfPreviewItemsInPreviewController(controller: QLPreviewController!) -> Int{
-return 1
-  }
+	func numberOfPreviewItemsInPreviewController(controller: QLPreviewController!) -> Int{
+		return 1
+  	}
 
 	func previewController(controller: QLPreviewController!, previewItemAtIndex index: Int) -> QLPreviewItem! {
 		println(“Getting item”)
