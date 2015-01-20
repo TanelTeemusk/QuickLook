@@ -45,7 +45,8 @@ return 1
   }
 
 func previewController(controller: QLPreviewController!, previewItemAtIndex index: Int) -> QLPreviewItem! {
-  println(“Getting item”)
+
+	println(“Getting item”)
   var mainbundle = NSBundle.mainBundle()
   var url = mainbundle.pathForResource(“<YOUR DOC FILENAME>”, ofType: “pdf”)!
   println(url)
