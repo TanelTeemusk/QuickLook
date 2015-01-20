@@ -19,16 +19,17 @@ CSV files
 
 QLPreviewController needs a data source object. QuickLook preview controller can either be pushed into view or display in modal view. The latter is used for the following example.
 
-1. Make a new Single view application project in Xcode and call it anything you like. 
-2. Add a supported document to project root. Just drag and drop it into Xcode and copy items if needed.
-3. Open ViewController.swift and import QuickLook. Also make sure you extend this class with QLPreviewControllerDataSource
+ 
+- Make a new Single view application project in Xcode and call it anything you like. 
+- Add a supported document to project root. Just drag and drop it into Xcode and copy items if needed.
+- Open ViewController.swift and import QuickLook. Also make sure you extend this class with QLPreviewControllerDataSource
 
 import UIKit
 import QuickLook
 
 class ViewController: UIViewController, QLPreviewControllerDataSource {
 
-4. Initiate the QLPreviewController in viewDidLoad function and add dataSource to it.
+- Initiate the QLPreviewController in viewDidLoad function and add dataSource to it.
 
 var ql = QLPreviewController()
 ql.dataSource = self
@@ -37,7 +38,7 @@ Also present the view controller 
 
 presentViewController(ql, animated: true, completion: nil)
 
-5. Add two data source non-optional methods
+- Add two data source non-optional methods
 
 func numberOfPreviewItemsInPreviewController(controller: QLPreviewController!) -> Int{
 return 1
@@ -54,4 +55,4 @@ return doc
 
 Here you will have to substitute your document name in pathForResource function and also add a correct type for the file. In our example case it’s pdf.
 
-6. Compile and preview the magic.
+- Compile and preview the magic.
