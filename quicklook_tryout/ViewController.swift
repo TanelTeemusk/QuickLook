@@ -7,18 +7,34 @@
 //
 
 import UIKit
+import QuickLook
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, QLPreviewControllerDataSource {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        var ql = QLPreviewController()
+        ql.dataSource  = self
+        presentViewController(ql, animated: true, completion: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    func numberOfPreviewItemsInPreviewController(controller: QLPreviewController!) -> Int{
+        return 1
     }
+    
+    func previewController(controller: QLPreviewController!, previewItemAtIndex index: Int) -> QLPreviewItem! {
+        println("Getting item")
+        var mainbundle = NSBundle.mainBundle()
+        var url = mainbundle.pathForResource("mypdf", ofType: "pdf")!
+        println(url)
+        var doc = NSURL(fileURLWithPath: url)
+        return doc
+    }
+    
+    
+    
 
 
 }

@@ -13,6 +13,7 @@
 		510DB3EB1A6E8E7D00F63839 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 510DB3EA1A6E8E7D00F63839 /* Images.xcassets */; };
 		510DB3EE1A6E8E7D00F63839 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 510DB3EC1A6E8E7D00F63839 /* LaunchScreen.xib */; };
 		510DB3FA1A6E8E7D00F63839 /* quicklook_tryoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510DB3F91A6E8E7D00F63839 /* quicklook_tryoutTests.swift */; };
+		510DB4041A6E8ED400F63839 /* mypdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 510DB4031A6E8ED400F63839 /* mypdf.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		510DB3F31A6E8E7D00F63839 /* quicklook_tryoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quicklook_tryoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		510DB3F81A6E8E7D00F63839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		510DB3F91A6E8E7D00F63839 /* quicklook_tryoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quicklook_tryoutTests.swift; sourceTree = "<group>"; };
+		510DB4031A6E8ED400F63839 /* mypdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mypdf.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		510DB3E01A6E8E7D00F63839 /* quicklook_tryout */ = {
 			isa = PBXGroup;
 			children = (
+				510DB4031A6E8ED400F63839 /* mypdf.pdf */,
 				510DB3E31A6E8E7D00F63839 /* AppDelegate.swift */,
 				510DB3E51A6E8E7D00F63839 /* ViewController.swift */,
 				510DB3E71A6E8E7D00F63839 /* Main.storyboard */,
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				510DB3E91A6E8E7D00F63839 /* Main.storyboard in Resources */,
+				510DB4041A6E8ED400F63839 /* mypdf.pdf in Resources */,
 				510DB3EE1A6E8E7D00F63839 /* LaunchScreen.xib in Resources */,
 				510DB3EB1A6E8E7D00F63839 /* Images.xcassets in Resources */,
 			);
@@ -405,6 +409,7 @@
 				510DB3FF1A6E8E7D00F63839 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		510DB4001A6E8E7D00F63839 /* Build configuration list for PBXNativeTarget "quicklook_tryoutTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				510DB4021A6E8E7D00F63839 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
