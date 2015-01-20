@@ -28,7 +28,7 @@ import QuickLook
 
 class ViewController: UIViewController, QLPreviewControllerDataSource {
 
-4 Initiate the QLPreviewController in viewDidLoad function and add dataSource to it.
+4. Initiate the QLPreviewController in viewDidLoad function and add dataSource to it.
 
 var ql = QLPreviewController()
 ql.dataSource = self
@@ -37,7 +37,7 @@ Also present the view controller 
 
 presentViewController(ql, animated: true, completion: nil)
 
-5 Add two data source non-optional methods
+5. Add two data source non-optional methods
 
 func numberOfPreviewItemsInPreviewController(controller: QLPreviewController!) -> Int{
 return 1
@@ -54,4 +54,4 @@ return doc
 
 Here you will have to substitute your document name in pathForResource function and also add a correct type for the file. In our example case it’s pdf.
 
-6 Compile and preview the magic.
+6. Compile and preview the magic.
